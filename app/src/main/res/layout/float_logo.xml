@@ -1,0 +1,2957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewScrolled">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnView"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/icon"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#00000000"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="#FFF">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D4XCheats"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:layout_marginLeft="125dp"
+                            android:id="@+id/btnLayoutMinimize"
+                            android:textColor="#FF171717"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal"
+                                android:background="#FFF">
+                                <LinearLayout
+                                    android:layout_marginTop="-10dp"
+                                    android:padding="10dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp">
+                                    <Button
+                                        android:id="@+id/btnEspView"
+                                        android:text="esp"
+                                        android:textColor="#FFF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="-20dp"
+                                    android:padding="10dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp">
+                                        <Button
+                                        android:id="@+id/btnOtherView"
+                                        android:text="Aim"
+                                        android:textColor="#FFF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="-20dp"
+                                    android:padding="10dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp">
+                                    <Button
+                                        android:id="@+id/btnWeaponView"
+                                        android:text="Spd"
+                                        android:textColor="#FFF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="-20dp"
+                                    android:padding="10dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp">
+                                    <Button
+                                        app:cardCornerRadius="10dp"
+                                        android:id="@+id/btnSettingView"
+                                        android:text="stc"
+                                        android:textColor="#FFF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="-20dp"
+                                    android:padding="10dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp">
+                                    <Button
+                                        app:cardCornerRadius="10dp"
+                                        android:id="@+id/btnSettingView2"
+                                        android:text="hax"
+                                        android:textColor="#FFF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:background="#FFF">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scrollbars="none">
+
+                                    <LinearLayout
+                                        android:layout_width="300dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingBottom="5dp">
+
+                                        <LinearLayout
+                                            android:id="@+id/espView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <RadioGroup
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/fpssatu"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="30fps"
+                                                    android:textColor="#000000"
+                                                    android:checked="true"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/fpsdua"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="50fps"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                            </RadioGroup>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="80dp"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Rate 65-70fps"
+                                                    android:textSize="14sp" />
+
+                                                <SeekBar
+                                                    android:id="@+id/fps"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:max="400"
+                                                    android:progress="250"
+                                                    android:theme="@style/myBtn" />
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <CheckBox
+                                                    android:id="@+id/isName"
+                                                    android:layout_width="90dp"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Name"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                                <CheckBox
+                                                    android:id="@+id/isBack"
+                                                    android:layout_width="135dp"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="360° alert"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <CheckBox
+                                                    android:id="@+id/isHealth"
+                                                    android:layout_width="90dp"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Health"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                                <CheckBox
+                                                    android:id="@+id/isDist"
+                                                    android:layout_width="135dp"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Distance"
+                                                    android:checked="true"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                            </LinearLayout>
+
+
+
+                                            <CheckBox
+                                                android:id="@+id/isSkelton"
+                                                android:layout_width="100dp"
+                                                android:theme="@style/myBtn"
+                                                android:layout_height="wrap_content"
+                                                android:text="Skeleton"
+                                                android:textColor="#000000"
+                                                android:textSize="14sp" />
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Box"
+                                                android:textColor="#000000"
+                                                android:textSize="14sp" />
+
+                                            <RadioGroup
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/boxOFF"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:checked="true"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Off"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                                <RadioButton
+                                                    android:id="@+id/isBox"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Legacy"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                            </RadioGroup>
+                                            <RadioButton
+                                                android:id="@+id/isBoxFill"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Precise* (soon)"
+                                                android:enabled="false"
+                                                android:theme="@style/myBtn"
+                                                android:textColor="#C9B5A4A4"
+                                                android:textSize="14sp" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Line"
+                                                android:textColor="#000000"
+                                                android:textSize="14sp" />
+
+                                            <RadioGroup
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/lineOFF"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:checked="true"
+                                                    android:text="Off"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/isLineTop"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Top"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/isLineMiddle"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Middle"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/isLineBottom"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Bottom"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                            </RadioGroup>
+                                            <Switch
+                                                android:id="@+id/isHead"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Head Location"
+                                                android:textColor="#000000"
+                                                android:theme="@style/myBtn"
+                                                android:textSize="15sp" />
+                                            <Switch
+                                                android:id="@+id/isEnemyWeapon"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Enemy Weapon"
+                                                android:textColor="#000000"
+                                                android:theme="@style/myBtn"
+                                                android:textSize="15sp" />
+
+                                            <Switch
+                                                android:id="@+id/isGrenadeWarning"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Grenade Warning"
+                                                android:textColor="#000000"
+                                                android:theme="@style/myBtn"
+                                                android:textSize="15sp" />
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="1sp"
+                                                android:orientation="vertical"
+                                                android:background="#85A39595"
+                                                android:layout_marginTop="10dp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Show Items And Vehicle">
+
+  </TextView>
+                                            <RadioGroup
+                                                android:id="@+id/testhide"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/hideoff"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Off"
+                                                    android:textColor="#000000"
+                                                    android:checked="true"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/hideon"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="On"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14sp" />
+                                            </RadioGroup>
+                                            <LinearLayout
+                                                android:id="@+id/test"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:visibility="gone">
+                                                <TextView
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical"
+                                                    android:text="ESP Items (custom) "
+                                                    android:textAlignment="gravity"
+                                                    android:textColor="#000000"
+                                                    android:textSize="13dp" />
+                                                <RadioGroup
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+
+                                                    <RadioButton
+                                                        android:id="@+id/meterialdistance"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:theme="@style/myBtn"
+                                                        android:layout_toLeftOf="@+id/view"
+                                                        android:text="NameDistance"
+                                                        android:textColor="#000000"
+                                                        android:textSize="14sp" />
+
+                                                    <RadioButton
+                                                        android:id="@+id/meterial"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:theme="@style/myBtn"
+                                                        android:layout_toLeftOf="@+id/view"
+                                                        android:text="Distance"
+                                                        android:checked="true"
+                                                        android:textColor="#000000"
+                                                        android:textSize="14sp" />
+
+
+                                                </RadioGroup>
+
+
+                                                <TextView
+                                                    android:id="@+id/vehicle"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="10.0dp"
+                                                    android:text="Vehicle"
+                                                    android:textColor="#000000"
+                                                    android:textSize="14dp"
+                                                    />
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="horizontal|vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content">
+
+                                                        <TableLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:visibility="visible">
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Buggy"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Buggy"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                                <CheckBox
+                                                                    android:id="@+id/UAZ"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="UAZ"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Trike"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Trike"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Bike"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Bike"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Dacia"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Dacia"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Jet"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Jet"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Boat"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Boat"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Bus"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="Bus"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn"/>
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Mirado"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Mirado"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Scooter"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Scooter"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Rony"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Rony"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Snowbike"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Snowbike"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Snowmobile"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Snowmobile"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Tempo"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Tempo"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Truck"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Truck"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/MonsterTruck"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Monster Truck"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/BRDM"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="BRDM"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/LadaNiva"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="LadaNiva"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                        </TableLayout>
+
+                                                    </LinearLayout>
+
+                                                </HorizontalScrollView>
+
+                                                <TextView
+                                                    android:id="@+id/special"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Special Items"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/specialTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/FlareGun"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Flare Gun"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/GullieSuit"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Ghillie Suitt"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/AirDrop"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="AirDrop"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/DropPlane"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="DropPlane"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <CheckBox
+                                                        android:id="@+id/Crate"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+
+                                                        android:text="Crate"
+                                                        android:textColor="#000000"
+                                                        android:theme="@style/myBtn" />
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/scopes"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Scopes"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="horizontal|vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content">
+
+                                                        <TableLayout
+                                                            android:id="@+id/scopeTab"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:visibility="visible">
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/hollow"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Hollow"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/canted"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Canted"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/reddot"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Red Dot"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/twox"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="2x"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:textColor="#000000"
+                                                                android:theme="@style/myBtn">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/eightx"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="8x"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/threex"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="3x"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/fourx"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="4x"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/sixx"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="6x"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                        </TableLayout>
+
+                                                    </LinearLayout>
+
+                                                </HorizontalScrollView>
+
+                                                <TextView
+                                                    android:id="@+id/arsmg"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Auto and SMG"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="horizontal|vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content">
+
+                                                        <TableLayout
+                                                            android:id="@+id/scopeAutoSMG"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent">
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/AUG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="AUG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/M762"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="M762"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/SCARL"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="SCAR-L"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/M416"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="M416"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/M16A4"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="M16A4"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Mk47Mutant"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Mk47 Mutant"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/G36C"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="G36C"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/QBZ"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="QBZ"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/AKM"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="AKM"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Groza"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Groza"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Bizon"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Bizon"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/TommyGun"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="TommyGun"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/MP5K"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="MP5K"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/UMP"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="UMP"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Vector"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Vector"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Uzi"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Uzi"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/DP28"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="DP28"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/M249"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="M249"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                        </TableLayout>
+
+                                                    </LinearLayout>
+
+                                                </HorizontalScrollView>
+
+                                                <TextView
+                                                    android:id="@+id/snipers"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Snipers"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textStyle="bold"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/sniperTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/AWM"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="AWM"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Kar98k"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Kar98k"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/M24"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="M24"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/SKS"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="SKS"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/SLR"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="SLR"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Mini14"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Mini14"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/QBU"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="QBU"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Win94"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Win94"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Mk14"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Mk14"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <CheckBox
+                                                        android:id="@+id/VSS"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+
+                                                        android:text="VSS"
+                                                        android:textColor="#000000"
+                                                        android:theme="@style/myBtn" />
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/shotgunhaand"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Shotgun and Pan"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="horizontal|vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content">
+
+                                                        <TableLayout
+                                                            android:id="@+id/shotgunTab"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:visibility="visible">
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/S12K"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="S12K"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/DBS"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="DBS"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/S686"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="S686"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/S1897"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="S1897"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Sickle"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Sickle"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Machete"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Machete"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/CrossBow"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="CrossBow"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Pan"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Pan"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Crowbar"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+
+                                                                    android:text="Cowbar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                        </TableLayout>
+
+                                                    </LinearLayout>
+
+                                                </HorizontalScrollView>
+
+                                                <TextView
+                                                    android:id="@+id/pistols"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Pistols"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/pistolTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/SawedOff"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="SawedOff"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/R1895"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="R1895"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Vz61"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Vz61"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/P92"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="P92"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/P18C"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="P18C"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/R45"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="R45"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/P1911"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="P1911"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/DesertEagle"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Desert Eagle"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/ammo"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Ammo"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/ammoTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/sst"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="7.62"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/ffs"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="5.56"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/nmm"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="9mm"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/tzzMagnum"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="300Magnum"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Arrow"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Arrow"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/ffACP"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="45ACP"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/otGuage"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="12 Guage"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/baghelmet"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Bag Helmet Vest"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/bagTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Baglvl1"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Bag L 1"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Baglvl2"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Bag L 2"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Baglvl3"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Bag L 3"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Helmetlvl1"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Helmet 1"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Helmetlvl2"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Helmet 2"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Helmetlvl3"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Helmet 3"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Vestlvl1"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Vest L 1"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Vestlvl2"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Vest L 2"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Vestlvl3"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Vest L 3"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/healthkits"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Health Kits"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/healthkitTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Painkiller"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="PainKiller"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Adrenaline"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Adrenaline"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Bandage"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Bandage"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/FirstAidKit"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="FirstAidKit"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/EnergyDrink"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Energy Drink"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Medkit"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Medkit"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/Throwables"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Throwables"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+
+                                                    android:visibility="visible" />
+
+                                                <TableLayout
+                                                    android:id="@+id/ThrowablesTab"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:visibility="visible">
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Stung"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Stung"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Grenade"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+
+                                                            android:text="Grenade"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                    <TableRow
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <CheckBox
+                                                            android:id="@+id/Smoke"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Smoke"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                        <CheckBox
+                                                            android:id="@+id/Molotov"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+
+                                                            android:text="Molotov"
+                                                            android:textColor="#000000"
+                                                            android:theme="@style/myBtn" />
+
+                                                    </TableRow>
+
+                                                </TableLayout>
+
+                                                <TextView
+                                                    android:id="@+id/others"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5.0dp"
+                                                    android:text="Other Items"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn"
+                                                    android:textSize="14dp"
+                                                    android:visibility="visible" />
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="horizontal|vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content">
+
+                                                        <TableLayout
+                                                            android:id="@+id/otherTab"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent">
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/FlashHiderAr"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Flash Hider Ar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ArCompensator"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ar Compensator"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/CompensatorSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Compensator SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/TacticalStock"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Tactical Stock"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Duckbill"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Duckbill"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/FlashHiderSniper"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Flash Hider Snp"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/SuppressorSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Suppressor SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/HalfGrip"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Half Grip"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/Choke"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Choke"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/StockMicroUZI"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Stock Micro UZI"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/SniperCompensator"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="SniperCompensator"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/SuppressorSniper"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Sup Sniper"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/SuppressorAr"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Suppressor Ar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExQdSniper"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.Qd.Sniper"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/QdSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Qd.SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/QdSniper"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Qd.Sniper"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExSniper"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.Sniper"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExAr"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.Ar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExQdAr"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.Qd.Ar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/QdAr"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Qd.Ar"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ExQdSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Ex.Qd.SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/QuiverCrossBow"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Quiver CrossBow"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/BulletLoop"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Bullet Loop"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/ThumbGrip"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Thumb Grip"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/LaserSight"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Laser Sight"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/AngledGrip"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Angled Grip"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/LightGrip"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Light Grip"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/GasCan"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Gas Can"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/FlashHiderSMG"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Flash Hider SMG"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                            <TableRow
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+
+                                                                <CheckBox
+                                                                    android:id="@+id/VerticalGrip"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="Vertical Grip"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                                <CheckBox
+                                                                    android:id="@+id/CheekPad"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+
+                                                                    android:text="CheekPad"
+                                                                    android:textColor="#000000"
+                                                                    android:theme="@style/myBtn" />
+
+                                                            </TableRow>
+
+                                                        </TableLayout>
+
+                                                    </LinearLayout>
+
+                                                </HorizontalScrollView>
+                                        </LinearLayout>
+                                      </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/otherView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+
+
+                                                    <CheckBox
+                                                        android:id="@+id/aimbot"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_toLeftOf="@+id/view"
+                                                        android:text="Aimbot"
+                                                        android:textColor="#000000"
+
+                                                        android:theme="@style/myBtn" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="Range(field of view):"
+                                                android:textAlignment="gravity"
+                                                android:textColor="#000000"
+                                                android:textSize="12dp" />
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="30dp"
+                                                android:orientation="horizontal">
+
+                                                <SeekBar
+                                                    android:id="@+id/range"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:max="1500"
+                                                    android:layout_marginTop="-5dp"
+                                                    android:progress="400"
+                                                    android:theme="@style/myBtn"/>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_marginTop="-10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="Aim Location"
+                                                android:textColor="#000000"
+                                                android:textSize="13dp" />
+
+                                            <RadioGroup
+                                                android:id="@+id/aimbotmode"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <RadioButton
+                                                    android:id="@+id/aimHead"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:checked="true"
+                                                    android:tag="1"
+                                                    android:text="Head*"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/aimChest"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:tag="2"
+                                                    android:text="Chest"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/aimStomach"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="3"
+                                                    android:tag="3"
+                                                    android:text="Stomach"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+                                            </RadioGroup>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="Target selection"
+                                                android:textAlignment="gravity"
+                                                android:textColor="#000000"
+                                                android:textSize="13dp" />
+
+                                            <RadioGroup
+                                                android:id="@+id/aimby"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <RadioButton
+                                                    android:id="@+id/crosshairPriority"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:checked="true"
+                                                    android:tag="1"
+                                                    android:text="Crosshair priority"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/distancePriority"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:tag="0"
+                                                    android:text="Distance priority"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+                                            </RadioGroup>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="Aimbot Toggle"
+                                                android:textAlignment="gravity"
+                                                android:textColor="#000000"
+                                                android:textSize="13dp" />
+
+                                            <RadioGroup
+                                                android:id="@+id/aimwhen"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <RadioButton
+                                                    android:id="@+id/alwaysOn"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:checked="true"
+                                                    android:tag="3"
+                                                    android:text="Always"
+                                                    android:textColor="#000000"
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/firingOnly"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:tag="2"
+                                                    android:text="Firing"
+                                                    android:textColor="#000000"
+
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/adsOnly"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:tag="1"
+                                                    android:text="Ads*"
+                                                    android:textColor="#000000"
+
+                                                    android:theme="@style/myBtn" />
+
+                                                <RadioButton
+                                                    android:id="@+id/firingAds"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:tag="4"
+                                                    android:text="Firing and Ads*"
+                                                    android:textColor="#000000"
+
+                                                    android:theme="@style/myBtn" />
+                                            </RadioGroup>
+                                            <Switch
+                                                android:id="@+id/aimknocked"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_toLeftOf="@+id/view"
+                                                android:text="knocked player"
+                                                android:textColor="#000000"
+                                                android:textSize="13dp"
+                                                android:theme="@style/myBtn" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/weaponView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+                                            <Switch
+                                                android:layout_marginTop="-3dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X10"
+                                                android:theme="@style/myBtn"
+
+                                                android:textColor="#000000"
+                                                android:text="Speed V1">
+
+                                            </Switch>
+
+                                            <Switch
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X11"
+                                                android:theme="@style/myBtn"
+
+                                                android:textColor="#000000"
+                                                android:text="Speed V2">
+
+                                            </Switch>
+
+                                            <Switch
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X12"
+                                                android:theme="@style/myBtn"
+                                                android:enabled="false"
+                                                android:textColor="#A39999"
+                                                android:text="Speed V3 ->(key special)">
+
+                                            </Switch>
+
+                                            <Switch
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X13"
+                                                android:theme="@style/myBtn"
+                                                android:textColor="#A39999"
+                                                android:enabled="false"
+                                                android:text="Speed V4 ->(key special)">
+
+                                            </Switch>
+
+                                            <Switch
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X14"
+                                                android:theme="@style/myBtn"
+                                                android:textColor="#A39999"
+                                                android:enabled="false"
+                                                android:text="Speed V5 ->(key special)">
+
+                                            </Switch>
+
+                                            <RadioGroup
+                                                android:id="@+id/testspeed"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/speedoff"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Off"
+                                                    android:textColor="#938888"
+                                                    android:checked="true"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/speedon"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Speed Others"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#A39999"
+                                                    android:textSize="14sp" />
+                                            </RadioGroup>
+                                            <LinearLayout
+                                                android:id="@+id/hidespeed"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:visibility="gone">
+                                                <CheckBox
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X34"
+                                                    android:theme="@style/myBtn"
+                                                    android:enabled="false"
+                                                    android:textColor="#A39999"
+                                                    android:text="Fix stuck ->(key special)">
+
+                                                </CheckBox>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:layout_width="50dp"
+                                                        android:theme="@style/myBtn"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Speed+"
+                                                        android:textSize="14sp" />
+
+                                                    <SeekBar
+                                                        android:id="@+id/spedplus"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:max="10"
+                                                        android:theme="@style/myBtn" />
+                                                </LinearLayout>
+
+                                                <RadioGroup
+                                                    android:id="@+id/firemode"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+                                                    <RadioButton
+                                                        android:id="@+id/fireoff"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:theme="@style/myBtn"
+                                                        android:text="Off"
+                                                        android:textColor="#000000"
+                                                        android:checked="true"
+                                                        android:textSize="14sp" />
+                                                    <RadioButton
+                                                        android:id="@+id/X15"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:theme="@style/myBtn"
+                                                        android:text="FireSpeed V1"
+                                                        android:textColor="#000000"
+                                                        android:textSize="14sp" />
+                                                    <RadioButton
+                                                        android:id="@+id/X16"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="FireSpeed V2 ->(key special)"
+                                                        android:enabled="false"
+                                                        android:theme="@style/myBtn"
+                                                        android:textColor="#A39999"
+                                                        android:textSize="14sp" />
+                                                </RadioGroup>
+                                                <Switch
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X33"
+                                                    android:text="ParachuteFast"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000">
+
+                                                </Switch>
+                                                <Switch
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X17"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"
+                                                    android:text="Speed prone-knock">
+
+                                                </Switch>
+                                                <Switch
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X18"
+                                                    android:theme="@style/myBtn"
+
+                                                    android:textColor="#000000"
+                                                    android:text="Speed all cars">
+
+                                                </Switch>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/settingView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+                                            <TextView
+                                                android:layout_marginTop="-3dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+
+                                                android:textColor="#000000"
+                                                android:text="IpadView">
+
+                                            </TextView>
+
+                                            <SeekBar
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/ipadview"
+                                                android:theme="@style/myBtn"
+                                                android:max="5">
+
+                                            </SeekBar>
+                                            <TextView
+                                                android:layout_marginTop="-3dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+
+                                                android:textColor="#000000"
+                                                android:text="WideView">
+
+                                            </TextView>
+
+                                            <SeekBar
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/wideview"
+                                                android:theme="@style/myBtn"
+                                                android:max="5">
+
+                                            </SeekBar>
+                                            <CheckBox
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X2"
+                                                android:text="Less recoil"
+                                                android:theme="@style/myBtn"
+
+                                                android:textColor="#000000"/>
+                                            <CheckBox
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X3"
+                                                android:text="No recoil"
+                                                android:theme="@style/myBtn"
+
+                                                android:textColor="#000000"/>
+                                            <CheckBox
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X4"
+                                                android:theme="@style/myBtn"
+                                                android:text="Small croshair"
+
+                                                android:textColor="#000000"/>
+                                            <CheckBox
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/X5"
+                                                android:text="Hit-efex"
+                                                android:theme="@style/myBtn"
+                                                android:textColor="#000000"/>
+                                            <RadioGroup
+                                                android:id="@+id/testothers"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/othersoff"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+                                                    android:text="Off"
+                                                    android:textColor="#000000"
+                                                    android:checked="true"
+                                                    android:textSize="14sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/otherson"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Show Others"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#938888"
+                                                    android:textSize="14sp" />
+                                            </RadioGroup>
+                                            <LinearLayout
+                                                android:id="@+id/hideothers"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:visibility="gone">
+
+
+                                                <Switch
+                                                    android:id="@+id/X29"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:text="Jump Fly(character) ->(key special)"
+                                                    android:enabled="false"
+                                                    android:textColor="#A39999" />
+                                                <Switch
+                                                    android:id="@+id/X30"
+                                                    android:theme="@style/myBtn"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:enabled="false"
+                                                    android:text="Jump Fly(cars) ->(key special)"
+                                                    android:textColor="#A39999" />
+
+                                                <Switch
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X6"
+                                                    android:text="Fast scope"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"/>
+                                                <Switch
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X7"
+                                                    android:text="Sit scope"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"/>
+                                                <Switch
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X8"
+                                                    android:text="Stand scope"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"/>
+                                                <Switch
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/X9"
+                                                    android:text="Prone scope"
+                                                    android:theme="@style/myBtn"
+                                                    android:textColor="#000000"/>
+
+
+
+
+                                            </LinearLayout>
+
+
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/settingView2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+                                            <Switch
+                                                android:id="@+id/X19"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="Instant-hit ->(key special)"
+                                                android:theme="@style/myBtn"
+                                             android:enabled="false"
+                                                android:textColor="#A39999" />
+
+
+                                            <CheckBox
+                                                android:id="@+id/X20"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="HeadShoot v1"
+                                                android:theme="@style/myBtn"
+
+                                                android:textColor="#000000" />
+                                            <CheckBox
+                                                android:id="@+id/X31"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="HeadShoot v2 ->(key special)"
+                                                android:theme="@style/myBtn"
+                                            android:enabled="false"
+                                                android:textColor="#A39999" />
+
+                                            <CheckBox
+                                                android:id="@+id/X21"
+                                                android:theme="@style/myBtn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="Magic Bullet"
+
+                                                android:textColor="#000000" />
+
+                                            <RadioGroup
+                                                android:id="@+id/customfog"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                                <RadioButton
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:theme="@style/myBtn"
+                                                    android:checked="true"
+                                                    android:tag="4"
+                                                    android:id="@+id/X22"
+                                                    android:textSize="14dp"
+                                                    android:text="Off"
+                                                    android:textColor="#000000" />
+                                                <RadioButton
+                                                    android:id="@+id/X23"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:theme="@style/myBtn"
+                                                    android:tag="3"
+
+                                                    android:text="No fog"
+                                                    android:textColor="#000000" />
+                                                <RadioButton
+                                                    android:id="@+id/X24"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+
+                                                    android:tag="2"
+                                                    android:text="Blue fog"
+                                                    android:textColor="#000000" />
+                                                <RadioButton
+                                                    android:id="@+id/X25"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:theme="@style/myBtn"
+
+                                                    android:tag="1"
+                                                    android:text="Green fog"
+                                                    android:textColor="#000000" />
+                                            </RadioGroup>
+
+                                            <Switch
+                                                android:id="@+id/X26"
+                                                android:theme="@style/myBtn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="Tree and Grass"
+
+                                                android:textColor="#000000" />
+                                            <Switch
+                                                android:id="@+id/X27"
+                                                android:theme="@style/myBtn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="Night mode"
+
+                                                android:textColor="#000000" />
+                                            <Switch
+                                                android:id="@+id/X28"
+                                                android:theme="@style/myBtn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="Black body"
+
+                                                android:textColor="#000000" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </ScrollView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
